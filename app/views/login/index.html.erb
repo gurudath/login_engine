@@ -1,0 +1,32 @@
+<div id="main">
+        	
+        	<h1>Sign up, it's FREE!</h1>
+        	
+        	<%= form_tag(:action=>"verify_login") %>
+        		
+        		<div class="row email">
+                    <%= text_field_tag :email,nil,:placeholder=>"Email",:id=>"email"%>
+        		</div>
+        		
+        		<div class="row pass">
+                    <%= password_field_tag :password,nil,:placeholder=>"Password" ,:id=>"password1"%>
+        		</div>
+        		
+        		<div class="row pass">
+                    <%= password_field_tag :password,nil,:placeholder=>"Password (repeat)",:id=> "password2",:disabled=>"true"%>
+        		</div>
+        		
+        		<!-- The rotating arrow -->
+        		<div class="arrowCap"></div>
+        		<div class="arrow"></div>
+        		
+        		<p class="meterText">Password Meter</p>
+        		<%= submit_tag('Login') %>
+       		
+        	</form>
+        </div>
+        
+        <footer>
+	        
+            <a class="al3xis"> Login From Gurudath </a>
+        </footer>
